@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Smoothie Heaven</title>
+</head>
+<body>
+
+    <header>
+        <h1>NEW FRUIT SODA X FOXTROT</h1>
+      <p class="sub-heading">Click to Reveal Limited Flavors!</p>
+    </header>
+
+
+<main>
+  
+    <div class="smoothie" id="smoothie1" onmouseover="changeColor('smoothie1')" onclick="flipCard('smoothie1')">
+        <div class="content">
+            <div class="front">
+                <img src="https://i.ibb.co/6ZzYst7/D1-D72945-1-F8-F-4580-A425-F40-E4837-C3-C7-1.jpg" alt="smoothie1">
+            </div>
+            <div class="back">
+                <p>Fizzy Tangerine Blast</p>
+            </div>
+        </div>
+    </div>
+    <div class="smoothie" id="smoothie2" onmouseover="changeColor('smoothie2')" onclick="flipCard('smoothie2')">
+        <div class="content">
+            <div class="front">
+                <img src="https://i.ibb.co/1LY0qp7/E86-A2720-80-CB-47-D1-8617-B231-C0-E315-AD.jpg" alt="smoothie2">
+            </div>
+            <div class="back">
+                <p>Kiwi Lime Breeze </p>
+            </div>
+        </div>
+    </div>
+    <div class="smoothie" id="smoothie3" onmouseover="changeColor('smoothie3')" onclick="flipCard('smoothie3')">
+        <div class="content">
+            <div class="front">
+                <img src="https://i.ibb.co/0VBtYyP/3-D6-CA478-88-E3-416-C-8679-F10908-D76-ACA.jpg" alt="smoothie3">
+            </div>
+            <div class="back">
+                <p>Lychee Peach Paradise</p>
+            </div>
+        </div>
+    </div>
+ 
+</main>
+
+
+
+
+
+<section id="quiz">
+    <h2>Find Your Favorite Fruit Soda Flavor</h2>
+    <form id="opinionQuiz">
+        <div class="question">
+            <p>1. Which flavor do you like the best?</p>
+            <div class="question-options">
+                <label class="radio-label">
+                    <input type="radio" name="q1" value="fizzy-tangerine">
+                    <div class="radio-btn">Fizzy Tangerine</div>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="q1" value="kiwi-lime">
+                    <div class="radio-btn">Kiwi + Lime</div>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="q1" value="lychee-peach">
+                    <div class="radio-btn">Lychee + Peach</div>
+                </label>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. Do you prefer sweet soda?</p>
+            <div class="question-options">
+                <label class="radio-label">
+                    <input type="radio" name="q2" value="yes">
+                    <div class="radio-btn">Yes</div>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="q2" value="no">
+                    <div class="radio-btn">No</div>
+                </label>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. Do you prefer citrus or tropical flavors?</p>
+            <div class="question-options">
+                <label class="radio-label">
+                    <input type="radio" name="q3" value="citrus">
+                    <div class="radio-btn">Citrus</div>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="q3" value="tropical">
+                    <div class="radio-btn">Tropical</div>
+                </label>
+            </div>
+        </div>
+        <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+</section>
+
+  
+
+    <footer>
+      <div class="spotify-container">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIdBPGI8sMIQM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" autoplay="1"></iframe>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
