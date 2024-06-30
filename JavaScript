@@ -1,0 +1,34 @@
+function changeColor(id) {
+    document.getElementById(id).style.backgroundColor = "#B4F87D"; 
+}
+
+function resetColor(id) {
+    document.getElementById(id).style.backgroundColor = ""; 
+}
+
+function flipCard(id) {
+    const smoothie = document.getElementById(id);
+    smoothie.classList.toggle('flipped');
+}
+function submitQuiz() {
+    
+    const choice = document.querySelector('input[name="q1"]:checked')?.value;
+
+   
+    let result = "";
+
+   
+    if (choice === "kiwi-lime") {
+        result = "Your recommended fruit soda flavor is: Kiwi + Lime Breeze!";
+    } else if (choice === "lychee-peach") {
+        result = "Your recommended fruit soda flavor is: Lychee Peach Paradise!";
+    } else if (choice === "fizzy-tangerine") {
+        result = "Your recommended fruit soda flavor is: Fizzy Tangerine Blast!";
+    }
+
+
+    if (result) {
+        alert(result);
+    }
+}
+
